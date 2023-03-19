@@ -1,0 +1,9 @@
+1 : docker build .
+2:docker run -p 3010:3000 id image
+3: docker run -p 3010:3000 --name node-app-cont  id image
+docker stop node-app
+docker start  node-app
+4 docker container prune
+docker image prune
+5 docker build -t node-img .
+6 docker run -p 3010:3000 --rm  --name node-app-cont  node-imggi
